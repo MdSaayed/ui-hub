@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header></header>
+
+    <!-- main -->
+    <main>
+        <div class="container mx-auto">
+            <div class="text-center my-16">
+                <h1 class="text-4xl font-semibold">AI Universe Hub</h1>
+                <button class="primary-color text-white py-2 px-3 rounded mt-4 text-1xl">Sort By Date</button>
+            </div>
+            <div id="ai-container" class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- item -->
+            </div>
+            <div class=" flex justify-center text-center my-8">
+                <button class="primary-color text-white py-2 px-3 rounded mt-4 text-1xl">See More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- spinner -->
+    <div id="loading-container" class="loading-container">
+        <div class="popup-overlay"></div>
+        <div class="flex justify-center items-center popup-box m-2 py-12 rounded-lg w-[28rem]">
+            <span class="loading loading-spinner loading-md text-white"></span>
+        </div>
+    </div>
+
+    <!-- details popup -->
+    <div id="single-product-popup" class="single-product-popup">
+        
+    </div>
+
+    <!-- script --> 
+    <script src="index.js"></script>
+</body>
+
+</html>
